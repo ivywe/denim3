@@ -1,21 +1,18 @@
 {# begin {templatelocation} #}
 
-<form action="{site_url}/users.php" method="post" id="newemail" class="compact">
+<form action="{site_url}/users.php" method="post" id="newemail" class="uk-form-horizontal">
   <fieldset>
     <legend>{lang_setnewemail}</legend>
 
     <p class="message">{lang_explain}</p>
 
-    <dl>
-      <dt>{lang_username}</dt>
-      <dd>{user_name}</dd>
+      <label class="uk-form-label" for="">{lang_username}</label>
+      <div class="uk-form-controls">{user_name}</div>
+      <label class="uk-form-label" for=""><label for="newemail-email">{lang_newemail}</label>
+      <div class="uk-form-controls"><input type="text" size="32" maxlength="96" name="email" value="{email}" id="newemail-email" class="text"{xhtml}></div>
 
-      <dt><label for="newemail-email">{lang_newemail}</label></dt>
-      <dd><input type="text" size="32" maxlength="96" name="email" value="{email}" id="newemail-email" class="text"{xhtml}></dd>
-
-      <dt><label for="newemail-email_conf">{lang_newemail_conf}</label></dt>
-      <dd><input type="text" size="32" maxlength="96" name="email_conf" value="{email_conf}" id="newemail-email_conf" class="text"{xhtml}></dd>
-    </dl>
+      <label class="uk-form-label" for=""><label for="newemail-email_conf">{lang_newemail_conf}</label>
+      <div class="uk-form-controls"><input type="text" size="32" maxlength="96" name="email_conf" value="{email_conf}" id="newemail-email_conf" class="text"{xhtml}></div>
     
     {captcha}
 

@@ -1,21 +1,21 @@
 {# start {templatelocation} #}
 
 {start_block_loginagain}
-  <form action="{site_url}/users.php" method="post" id="userloginform" class="compact uk-form">
+  <form action="{site_url}/users.php" method="post" id="userloginform" class="uk-form-horizontal">
     <fieldset>
       <legend>{lang_login}</legend>
 
       <p class="form_message">{lang_message}</p>
 
-      <dl class="form_block">
-        <dt><label for="users-loginform-loginname">{lang_username}</label></dt>
-        <dd><input type="text" name="loginname" id="users-loginform-loginname" class="size3"{xhtml}></dd>
+      <div class="uk-margin" dl>
+        <label class="uk-form-label" for="users-loginform-loginname">{lang_username}</label>
+        <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" name="loginname" id="users-loginform-loginname"{xhtml}></div>
 
         {services}
 
-        <dt><label for="users-loginform-passwd">{lang_password}</label></dt>
-        <dd><input type="password" name="passwd" id="users-loginform-passwd" class="size3"{xhtml}></dd>
-      </dl>
+        <label class="uk-form-label" for="users-loginform-passwd">{lang_password}</label>
+        <div class="uk-form-controls"><input type="password" class="uk-input uk-form-width-small" name="passwd" id="users-loginform-passwd"{xhtml}></div>
+      </div>
 
       {captcha}
 

@@ -1,52 +1,57 @@
 {# start {templatelocation} #}
 
-<form action="{site_url}/search.php" method="get" id="advsearchform" class="compact uk-form">
+<form action="{site_url}/search.php" method="get" id="advsearchform" class="uk-form-horizontal">
 
   <div class="user_basic">
     <p class="form_message">{search_intro}</p>
 
-    <dl class="form_block">
-      <dt><label for="advsearchform-query">{lang_keywords}</label></dt>
-      <dd>
-        <input type="text" maxlength="35" value="{query}" name="query" id="advsearchform-query" class="size3"{xhtml}>
+    <div class="uk-margin" dl>
+      <label class="uk-form-label" for="advsearchform-query">{lang_keywords}</label>
+      <div class="uk-form-controls">
+        <input type="text" class="uk-input uk-form-width-small" maxlength="35" value="{query}" name="query" id="advsearchform-query"{xhtml}>
         <select name="keyType" title="{lang_keytype}" id="advsearchform-keyType">
           <option value="phrase" {key_phrase_selected}>{lang_exact_phrase}</option>
           <option value="all" {key_all_selected}>{lang_all_words}</option>
           <option value="any" {key_any_selected}>{lang_any_word}</option>
         </select>
-        <label><input type="checkbox" value="true" name="title"{title_checked}{xhtml}>{lang_titles}</label>
-      </dd>
-
-      <dt><label for="advsearchform-datestart">{lang_date}</label></dt>
-      <dd>
-        <input type="text" maxlength="10" name="datestart" value="{datestart}" id="advsearchform-datestart" class="size2"{xhtml}> <span class="loose">{lang_to}</span> <input type="text" maxlength="10" name="dateend" value="{dateend}" id="advsearchform-dateend" class="size2"{xhtml}>
-      </dd>
-      <dd class="description">{date_format}</dd>
-
-      <dt><label for="advsearchform-topic">{lang_topic}</label></dt>
-      <dd>
+        <input type="checkbox" class="uk-checkbox" value="true" name="title"{title_checked}{xhtml}>{lang_titles}
+      </div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="advsearchform-datestart">{lang_date}</label>
+      <div class="uk-form-controls">
+        <input type="text" class="uk-input uk-form-width-small" maxlength="10" name="datestart" value="{datestart}" id="advsearchform-datestart"{xhtml}> <span class="loose">{lang_to}</span> <input type="text" class="uk-input uk-form-width-small" maxlength="10" name="dateend" value="{dateend}" id="advsearchform-dateend"{xhtml}>
+      </div>
+      <div class=~uk-text-small">{date_format}</div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="advsearchform-topic">{lang_topic}</label>
+      <div class="uk-form-controls">
         <select name="topic" id="advsearchform-topic">
           {topic_option_list}
         </select>
-      </dd>
-
-      <dt><label for="advsearchform-type">{lang_type}</label></dt>
-      <dd>
+      </div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="advsearchform-type">{lang_type}</label>
+      <div class="uk-form-controls">
         <select name="type" id="advsearchform-type">
           {plugin_types}
         </select>
-      </dd>
-
+      </div>
+    </div>
+    <div class="uk-margin">
       {author_form_element}
-
-      <dt><label for="advsearchform-results">{lang_results}</label></dt>
-      <dd>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="advsearchform-results">{lang_results}</label>
+      <div class="uk-form-controls">
         <select name="results" id="advsearchform-results">
           {search_limits}
         </select>
         {lang_per_page}
-      </dd>
-    </dl>
+      </div>
+    </div>
 
     <div class="submit">
       <input type="hidden" name="mode" value="search"{xhtml}>
