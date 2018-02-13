@@ -3,7 +3,7 @@
 <form action="{site_url}/submit.php" method="post" id="submitstory" class="uk-form-horizontal">
 
   <div class="user_basic">
-    <div class="uk-margin" dl>
+    <div class="uk-margin">
       <label class="uk-form-label" for="tid">{lang_username}</dt>
         <div class="uk-form-controls">{story_username} [ <a href="{status_url}" rel="nofollow">{lang_loginout}</a>{separator}{create_account} ]</div>
     </div>

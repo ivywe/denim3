@@ -3,46 +3,44 @@
 <form action="{php_self}" method="post" id="admin-mailform" class="uk-form-horizontal">
 
   <div class="uk-margin">
-    <div class="uk-margin">
-      <label class="uk-form-label" for="admin-mailform-to_group">{lang_to}</label>
-      <div class="uk-form-controls">
-        <select class="uk-select uk-form-width-small" name="to_group" id="admin-mailform-to_group">
-          <option value="">{lang_selectgroup}</option>
-          {group_options}
-        </select>
-      </div>
+    <label class="uk-form-label" for="admin-mailform-to_group">{lang_to}</label>
+    <div class="uk-form-controls">
+      <select class="uk-select uk-form-width-small" name="to_group" id="admin-mailform-to_group">
+        <option value="">{lang_selectgroup}</option>
+        {group_options}
+      </select>
     </div>
-    <div class="uk-margin">
-      <label class="uk-form-label" for="admin-mailform-fra">{lang_from}</label>
-      <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" value="{site_name}" name="fra" id="admin-mailform-fra"{xhtml}></div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="admin-mailform-fra">{lang_from}</label>
+    <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" value="{site_name}" name="fra" id="admin-mailform-fra"{xhtml}></div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="admin-mailform-fraepost">{lang_replyto}</label>
+    <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" value="{site_mail}" name="fraepost" id="admin-mailform-fraepost"{xhtml}></div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="admin-mailform-subject">{lang_subject}</label>
+    <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" value="{subject}" name="subject" id="admin-mailform-subject"{xhtml}></div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="admin-mailform-message">{lang_body}</label>
+    <div class="uk-form-controls"><textarea class="uk-textarea" rows="12" cols="44" name="message" id="admin-mailform-message">{message}</textarea></div>
+  </div>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="admin-mailform-html">{lang_options}</label>
+    <div class="uk-form-controls">
+      <input type="checkbox" class="uk-checkbox" name="html" id="admin-mailform-html"{html}{xhtml}>{lang_HTML}
+      <input type="checkbox" class="uk-checkbox" name="priority"{priority}{xhtml}>{lang_urgent}
+      <input type="checkbox" class="uk-checkbox" name="overstyr"{overstyr}{xhtml}>{lang_ignoreusersettings}
+      <p>{lang_mail_templatevars}</p>
     </div>
-    <div class="uk-margin">
-      <label class="uk-form-label" for="admin-mailform-fraepost">{lang_replyto}</label>
-      <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" value="{site_mail}" name="fraepost" id="admin-mailform-fraepost"{xhtml}></div>
-    </div>
-    <div class="uk-margin">
-      <label class="uk-form-label" for="admin-mailform-subject">{lang_subject}</label>
-      <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" value="{subject}" name="subject" id="admin-mailform-subject"{xhtml}></div>
-    </div>
-    <div class="uk-margin">
-      <label class="uk-form-label" for="admin-mailform-message">{lang_body}</label>
-      <div class="uk-form-controls"><textarea class="uk-textarea" rows="12" cols="44" name="message" id="admin-mailform-message">{message}</textarea></div>
-    </div>
-    <div class="uk-margin">
-      <label class="uk-form-label" for="admin-mailform-html">{lang_options}</label>
-      <div class="uk-form-controls">
-        <input type="checkbox" class="uk-checkbox" name="html" id="admin-mailform-html"{html}{xhtml}>{lang_HTML}
-        <input type="checkbox" class="uk-checkbox" name="priority"{priority}{xhtml}>{lang_urgent}
-        <input type="checkbox" class="uk-checkbox" name="overstyr"{overstyr}{xhtml}>{lang_ignoreusersettings}
-        <p>{lang_mail_templatevars}</p>
-      </div>
-    </dl>
+  </div>
 
-    <div class="submit">
-      <input type="hidden" name="mail" value="mail"{xhtml}>
-      <button type="submit" value="{lang_send}" onclick="return postconfirm()" class="uk-button uk-button-primary">{lang_send}</button>
-      <input type="hidden" name="{gltoken_name}" value="{gltoken}"{xhtml}>
-    </div>
+  <div class="submit">
+    <input type="hidden" name="mail" value="mail"{xhtml}>
+    <button type="submit" value="{lang_send}" onclick="return postconfirm()" class="uk-button uk-button-primary">{lang_send}</button>
+    <input type="hidden" name="{gltoken_name}" value="{gltoken}"{xhtml}>
   </div>
 </form>
 

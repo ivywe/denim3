@@ -5,7 +5,7 @@
   <div class="admin-list-search">
     {page_hidden}
     <div class="search-part" style="{show_limit}">
-      <label for="search-results-limit">{lang_limit}:</label>
+      <label class="uk-form-label" for="search-results-limit">{lang_limit}:</label>
       <select id="search-results-limit" name="results">
         {page_limit}
       </select>

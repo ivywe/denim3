@@ -20,7 +20,7 @@
       :
       <select class="uk-select uk-form-width-xsmall" name="publish_minute">{publish_minute_options}</select>
       {publishampm_selection}
-	  	<div class="uk-form-help-inline uk-text-small">{publish_date_explanation}</div>
+      <div class="uk-form-help-inline uk-text-small">{publish_date_explanation}</div>
     </div>
   </div>
   <div class="uk-margin">
@@ -49,7 +49,7 @@
     <label class="uk-form-label" for="admin-storyeditor-cachetime">{lang_cachetime}</label>
     <div class="uk-form-controls">
       <input type="text" class="uk-input uk-form-width-small" size="8" value="{cache_time}" name="cache_time" id="admin-storyeditor-cachetime" class="text" aria-describedby="desc-admin-storyeditor-cachetime"{xhtml}>
-	    <div class="uk-form-help-inline uk-text-small">{lang_cachetime_desc}</div>
+      <div class="uk-form-help-inline uk-text-small">{lang_cachetime_desc}</div>
     </div>
   </div>
   <div class="uk-margin">
@@ -199,8 +199,8 @@
       <label class="uk-form-label">{lang_perm_key}</label>
       <div class="uk-form-controls">
         <div class="uk-form-help-inline uk-text-small uk-text-danger">
-        	{lang_permissions_msg}
-				</div>
+          {lang_permissions_msg}
+        </div>
       </div>
     </div>
   </fieldset>

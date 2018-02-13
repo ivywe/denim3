@@ -5,7 +5,7 @@
   <div class="user_basic">
     <p class="form_message">{lang_description}</p>
 
-    <div class="uk-margin" dl>
+    <div class="uk-margin">
       <label class="uk-form-label" for="contactuserform-author">{lang_username}</label>
       <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" value="{username}" maxlength="32" name="author" id="contactuserform-author"{xhtml}></div>
   </div>

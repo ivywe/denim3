@@ -62,274 +62,274 @@
     </div>
     <div class="description" id="desc-admin-storyeditor_advanced-cachetime">
     {lang_cachetime_desc}
-	  </div>
-	  <div class="uk-margin"{hide_meta}>
-	    <label class="uk-form-label" for="admin-storyeditor_advanced-draft_flag">{lang_draft}</label>
-	    </label>
-	    <div class="uk-form-controls"><input type="checkbox" class="uk-checkbox" {is_checked} name="draft_flag" id="admin-storyeditor_advancedraft_flag"{xhtml}>
-	    </div>
-	  </div>
-	  <div class="uk-margin">
-	    {lang_story_stats}
-	    <div class="uk-form-controls">
-	      <div class="clearfix">
-	        <span class="story_stats">{lang_hits}: {story_hits}</span>
-	        <span class="story_stats">{lang_comments}: {story_comments}</span>
-	        <span class="story_stats">{lang_trackbacks}: {story_trackbacks}</span>
-	        <span class="story_stats">{lang_emails}: {story_emails}</span>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="uk-margin">
-	    <label class="uk-form-label"label for="sel_editmode">{lang_postmode}</label>
-	    <div class="uk-form-controls">
-	      <select class="uk-select uk-form-width-small" {change_editormode} name="postmode" id="sel_editmode">{post_options}</select>
-	    </div>
-	  </div>
-	  <div class="clearboth">
-	    <div id="text_editor" class="story_editor" style="display: {show_texteditor};">
-	      <div class="uk-margin">
-	        <div class="uk-margin">
-	          <label class="uk-form-label" for="introtext">{lang_introtext}</label>
-	          <div class="uk-form-controls">
-	            <div class="uk-button-group">
-	                <button class="uk-button uk-button-mini" type="button" title="{lang_expandhelp}" onclick="changeTextAreaSize('introtext','larger');" alt="expand button">
-	                <i class="uk-icon-plus">
-	                </i>
-	              </button>
-	                <button class="uk-button uk-button-mini" type="button" title="{lang_reducehelp}" onclick="changeTextAreaSize('introtext','smaller');" alt="collapse button">
-	                <i class="uk-icon-minus">
-	                </i>
-	              </button>
-	            </div>
-	              <textarea class="uk-textarea" cols="45" rows="14" name="introtext" id="introtext" aria-describedby="desc-admin-storyeditor-text">
-	              {story_introtext}
-	            </textarea>
-	          </div>
-	        </div>
-	        <div class="uk-margin">
-	          <label class="uk-form-label" for="bodytext">{lang_bodytext}</label>
-	          <div class="uk-form-controls">
-	            <div class="uk-button-group">
-	                <button class="uk-button uk-button-mini" type="button" title="{lang_expandhelp}" onclick="changeTextAreaSize('bodytext','larger');" alt="expand button">
-	                <i class="uk-icon-plus">
-	                </i>
-	              </button>
-	                <button class="uk-button uk-button-mini" type="button" title="{lang_reducehelp}" onclick="changeTextAreaSize('bodytext','smaller');" alt="collapse button">
-	                <i class="uk-icon-minus">
-	                </i>
-	              </button>
-	            </div>
-	              <textarea class="uk-textarea" cols="45" rows="14" name="bodytext" id="bodytext" aria-describedby="desc-admin-storyeditor-text">
-	              {story_bodytext}
-	            </textarea>
-	          </div>
-	        </div>
-	        <div class="description" id="desc-admin-storyeditor-text">
-	        	{lang_allowed_html}
-					</div>
-	      </div>
-	    </div>
-	  </div>
-	  <div id="html_editor" class="story_editor" style="display: {show_htmleditor};">
-	    <div class="uk-margin">
-	      <div class="uk-margin">
-	        <label class="uk-form-label" for="fckeditor_toolbar_selector">{lang_toolbar}</label>
-	        <div class="uk-form-controls">
-	            <select class="uk-select uk-form-width-small" id="fckeditor_toolbar_selector" name="fckeditor_toolbar_selector" onchange="changeToolbar(this.value);">
-	            <option value="editor-toolbar1">{toolbar1}</option>
-	            <option value="editor-toolbar2" selected="selected">{toolbar2}</option>
-	            <option value="editor-toolbar3">{toolbar3}</option>
-	            <option value="Default">{toolbar5}</option>
-	          </select>
-	        </div>
-	      </div>
-	      <div class="uk-margin">
-	        <label class="uk-form-label" for="introhtml">{lang_introtext}</label>
-	        <div class="uk-form-controls">
-	          <div class="uk-button-group">
-	              <button class="uk-button uk-button-mini" type="button" title="{lang_expandhelp}" onclick="changeHTMLTextAreaSize('introhtml','larger');" alt="expand button">
-	              <i class="uk-icon-plus">
-	              </i>
-	            </button>
-	              <button class="uk-button uk-button-mini" type="button" title="{lang_reducehelp}" onclick="changeHTMLTextAreaSize('introhtml','smaller');" alt="collapse button">
-	              <i class="uk-icon-minus">
-	              </i>
-	            </button>
-	          </div>
-	          <textarea class="uk-textarea" cols="45" rows="12" name="introhtml" id="introhtml">{story_introtext}</textarea>
-	        </div>
-	      </div>
-	      <div class="uk-margin">
-	        <label class="uk-form-label" for="bodyhtml">{lang_bodytext}</label>
-	        <div class="uk-form-controls">
-	          <div class="uk-button-group">
-	              <button class="uk-button uk-button-mini" type="button" title="{lang_expandhelp}" onclick="changeHTMLTextAreaSize('bodyhtml','larger');" alt="expand button">
-	              <i class="uk-icon-plus">
-	              </i>
-	            </button>
-	              <button class="uk-button uk-button-mini" type="button" title="{lang_reducehelp}" onclick="changeHTMLTextAreaSize('bodyhtml','smaller');" alt="collapse button">
-	              <i class="uk-icon-minus">
-	              </i>
-	            </button>
-	          </div>
-	          <textarea class="uk-textarea" cols="45" rows="20" name="bodyhtml" id="bodyhtml">{story_bodytext}</textarea>
-	          <div id="editor_mode">{lang_allowed_html}</div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	  <div id="se_options" style="display: none;">
-	    <fieldset>
-	      <div id="se_publish" style="display: none;">
-	        <legend>{lang_publishdate}</legend>
-	        <div class="uk-margin">
-	          <label class="uk-form-label" for="admin-storyeditor_advanced-publish_month">{lang_date}</label>
-	          <div class="uk-form-controls">
-	              <select class="uk-select uk-form-width-xsmall" name="publish_month" id="admin-storyeditor_advanced-publish_month" aria-describedby="desc-admin-storyeditor-publish_month">
-	              {publish_month_options}
-	            </select>
-	            /
-	            <select class="uk-select uk-form-width-xsmall" name="publish_day">{publish_day_options}</select>
-	            /
-	            <select class="uk-select uk-form-width-xsmall" name="publish_year">{publish_year_options}</select>
-	            &nbsp;&nbsp;
-	            <select class="uk-select uk-form-width-xsmall" name="publish_hour">{publish_hour_options}</select>
-	            :
-	            <select class="uk-select uk-form-width-xsmall" name="publish_minute">{publish_minute_options}</select>
-	            {publishampm_selection}
-	          </div>
-	        </div>
-	        <div class="uk-form-help-inline uk-text-small">
-	        	{publish_date_explanation}
-	        </div>
-	      </div>
-	    </fieldset>
-	  </div>
-	  <div class="uk-margin">
-	    <fieldset>
-	    <legend>{lang_publishoptions}</legend>
-	      <div class="uk-margin">
-	        <label class="uk-form-label" for="publish-options">{lang_mode}</label>
-	        <div class="uk-form-controls">
-	          {featured_options}
-	          <select class="uk-select uk-form-width-small" name="frontpage" id="publish-options">{frontpage_options}</select>
-	          <select class="uk-select uk-form-width-small" name="commentcode">{comment_options}</select>
-	          <select class="uk-select uk-form-width-small" name="trackbackcode">{trackback_options}</select>
-	        </div>
-	      </div>
-	      <div class="uk-margin">
-	        <label class="uk-form-label" for="cmt_close_flag">{lang_cmt_disable}</label>
-	        <div class="uk-form-controls">
-	          <label class="uk-form-label" for="cmt_close_flag">{lang_enabled}</label>
-	          &nbsp;
-	          <input type="checkbox" class="uk-checkbox" name="cmt_close_flag" id="cmt_close_flag" value="1" {is_checked5} onclick="enablecmtclose(this);"{xhtml}>
-	          &nbsp;
-	          <span dir="ltr">
-	            <select class="uk-select uk-form-width-xsmall" name="cmt_close_month">{cmt_close_month_options}</select>
-	            /
-	            <select class="uk-select uk-form-width-xsmall" name="cmt_close_day">{cmt_close_day_options}</select>
-	            /
-	            <select class="uk-select uk-form-width-xsmall" name="cmt_close_year">{cmt_close_year_options}</select>
-	            &nbsp;&nbsp;
-	            <select class="uk-select uk-form-width-xsmall" name="cmt_close_hour">{cmt_close_hour_options}</select>
-	            :
-	            <select class="uk-select uk-form-width-xsmall" name="cmt_close_minute">{cmt_close_minute_options}</select>
-	            {cmt_close_ampm_selection}
-	            <input type="hidden" name="cmt_close_second" value="{cmt_close_second}"{xhtml}>
-	          </span>
-	        </div>
-	      </div>
-	    </fieldset>
-	  </div>
-	  <div id="se_images" style="display: none;">
-	  	<fieldset>
-	      <legend>{lang_images}</legend>
-	    </fieldset>
-	  </div>
-	  <div id="se_archive" style="display: none;">
-	    <fieldset>
-	      <legend>{lang_archivetitle}</legend>
-	        <div class="uk-margin">
-	          <label class="uk-form-label" for="admin-storyeditor_advanced-archiveflag">{lang_archivetitle}</label>
-	          </label>
-	          <div class="uk-form-controls">
-	            <label class="uk-form-label" for="admin-storyeditor_advanced-archiveflag">{lang_enabled}</label>
-	            &nbsp;
-	            <input type="checkbox" class="uk-checkbox" value="1" {is_checked2} onclick="enablearchive(this);" name="archiveflag" id="admin-storyeditor_advanced-archiveflag"{xhtml}>
-	            <input type="checkbox" class="uk-checkbox" name="statuscode" id="storycode10" value="10" {is_checked3}{xhtml}>
-	            <label class="uk-form-label" for="storycode10">{lang_optionarchive}</label>
-	            &nbsp;&nbsp;&nbsp;&nbsp;
-	            <input type="checkbox" class="uk-checkbox" name="statuscode" id="storycode11" value="11" {is_checked4}{xhtml}>
-	            &nbsp;
-	            <label class="uk-form-label" for="storycode11">{lang_optiondelete}</label>
-	          </div>
-	        </div>
-	        <div class="uk-margin">
-	          <label class="uk-form-label" for="admin-storyeditor_advanced-expire_month">
-	          </label>
-	          <div class="uk-form-controls">
-	            {lang_date}&nbsp;
-	            <select class="uk-select uk-form-width-xsmall" name="expire_month" id="admin-storyeditor_advanced-expire_month">{expire_month_options}</select>
-	            /
-	            <select class="uk-select uk-form-width-xsmall" name="expire_day">{expire_day_options}</select>
-	            /
-	            <select class="uk-select uk-form-width-xsmall" name="expire_year">{expire_year_options}</select>
-	            &nbsp;&nbsp;
-	            <select class="uk-select uk-form-width-xsmall" name="expire_hour">{expire_hour_options}</select>
-	            :
-	            <select class="uk-select uk-form-width-xsmall" name="expire_minute">{expire_minute_options}</select>
-	            {expireampm_selection}
-	          </div>
-	        </div>
-	    </fieldset>
-	  </div>
-	  <div id="se_perms" style="display: none;">
-	    <fieldset>
-	      <legend>{lang_accessrights}</legend>
-	      <div class="uk-margin">
-	        {lang_owner}
-	        </label>
-	        <div class="uk-form-controls">{owner_name}</div>
-	      </div>
-	      <div class="uk-margin">
-	        <label class="uk-form-label" for="group_id">{lang_group}</label>
-	        <div class="uk-form-controls">{group_dropdown}</div>
-	      </div>
-	      <div class="uk-margin">
-	        {lang_permissions}
-	        <div class="description">{permissions_editor}</div>
-	      </div>
-	      <div class="description">{lang_perm_key}</div>
-	      <div class="description">{lang_permissions_msg}</div>
-	    </div>
-	    </fieldset>
-	  </div>
-	  <div id="se_bottom" style="display:{show_submitoptions}">
-	    <div class="submit">
-	      <button type="submit" name="mode" value="{lang_save}" class="uk-button uk-button-primary">{lang_save}</button>
-	      <button type="submit" name="mode" value="{lang_preview}" class="uk-button uk-button-success">{lang_preview}</button>
-	      {!if allow_delete}
-	        <button type="submit" name="mode" value="{lang_delete}" class="uk-button uk-button-danger" onclick="return confirm('{confirm_message}');">
-	        {lang_delete}
-	      </button>
-	      {!endif}
-	      <button type="submit" value="{lang_cancel}" name="mode" class="uk-button">{lang_cancel}</button>
-	      <input type="hidden" name="uid" value="{story_uid}"{xhtml}>
-	      <input type="hidden" name="publish_second" value="{publish_second}"{xhtml}>
-	      <input type="hidden" name="old_sid" value="{old_story_id}"{xhtml}>
-	      <input type="hidden" name="hour_mode" value="{hour_mode}"{xhtml}>
-	      <input type="hidden" name="expire_second" value="{expire_second}"{xhtml}>
-	      <input type="hidden" name="hits" value="{story_hits}"{xhtml}>
-	      <input type="hidden" name="comments" value="{story_comments}"{xhtml}>
-	      <input type="hidden" name="trackbacks" value="{story_trackbacks}"{xhtml}>
-	      <input type="hidden" name="numemails" value="{story_emails}"{xhtml}>
-	      <input type="hidden" name="owner_id" value="{owner_id}"{xhtml}>
-	      <input type="hidden" name="{gltoken_name}" value="{gltoken}"{xhtml}>
-	      {submission_option}
-	    </div>
-  	</div>
-	</form>
+    </div>
+    <div class="uk-margin"{hide_meta}>
+      <label class="uk-form-label" for="admin-storyeditor_advanced-draft_flag">{lang_draft}</label>
+      </label>
+      <div class="uk-form-controls"><input type="checkbox" class="uk-checkbox" {is_checked} name="draft_flag" id="admin-storyeditor_advancedraft_flag"{xhtml}>
+      </div>
+    </div>
+    <div class="uk-margin">
+      {lang_story_stats}
+      <div class="uk-form-controls">
+        <div class="clearfix">
+          <span class="story_stats">{lang_hits}: {story_hits}</span>
+          <span class="story_stats">{lang_comments}: {story_comments}</span>
+          <span class="story_stats">{lang_trackbacks}: {story_trackbacks}</span>
+          <span class="story_stats">{lang_emails}: {story_emails}</span>
+        </div>
+      </div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label"label for="sel_editmode">{lang_postmode}</label>
+      <div class="uk-form-controls">
+        <select class="uk-select uk-form-width-small" {change_editormode} name="postmode" id="sel_editmode">{post_options}</select>
+      </div>
+    </div>
+    <div class="clearboth">
+      <div id="text_editor" class="story_editor" style="display: {show_texteditor};">
+        <div class="uk-margin">
+          <div class="uk-margin">
+            <label class="uk-form-label" for="introtext">{lang_introtext}</label>
+            <div class="uk-form-controls">
+              <div class="uk-button-group">
+                  <button class="uk-button uk-button-mini" type="button" title="{lang_expandhelp}" onclick="changeTextAreaSize('introtext','larger');" alt="expand button">
+                  <i class="uk-icon-plus">
+                  </i>
+                </button>
+                  <button class="uk-button uk-button-mini" type="button" title="{lang_reducehelp}" onclick="changeTextAreaSize('introtext','smaller');" alt="collapse button">
+                  <i class="uk-icon-minus">
+                  </i>
+                </button>
+              </div>
+                <textarea class="uk-textarea" cols="45" rows="14" name="introtext" id="introtext" aria-describedby="desc-admin-storyeditor-text">
+                {story_introtext}
+              </textarea>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="bodytext">{lang_bodytext}</label>
+            <div class="uk-form-controls">
+              <div class="uk-button-group">
+                  <button class="uk-button uk-button-mini" type="button" title="{lang_expandhelp}" onclick="changeTextAreaSize('bodytext','larger');" alt="expand button">
+                  <i class="uk-icon-plus">
+                  </i>
+                </button>
+                  <button class="uk-button uk-button-mini" type="button" title="{lang_reducehelp}" onclick="changeTextAreaSize('bodytext','smaller');" alt="collapse button">
+                  <i class="uk-icon-minus">
+                  </i>
+                </button>
+              </div>
+                <textarea class="uk-textarea" cols="45" rows="14" name="bodytext" id="bodytext" aria-describedby="desc-admin-storyeditor-text">
+                {story_bodytext}
+              </textarea>
+            </div>
+          </div>
+          <div class="description" id="desc-admin-storyeditor-text">
+            {lang_allowed_html}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="html_editor" class="story_editor" style="display: {show_htmleditor};">
+      <div class="uk-margin">
+        <div class="uk-margin">
+          <label class="uk-form-label" for="fckeditor_toolbar_selector">{lang_toolbar}</label>
+          <div class="uk-form-controls">
+              <select class="uk-select uk-form-width-small" id="fckeditor_toolbar_selector" name="fckeditor_toolbar_selector" onchange="changeToolbar(this.value);">
+              <option value="editor-toolbar1">{toolbar1}</option>
+              <option value="editor-toolbar2" selected="selected">{toolbar2}</option>
+              <option value="editor-toolbar3">{toolbar3}</option>
+              <option value="Default">{toolbar5}</option>
+            </select>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <label class="uk-form-label" for="introhtml">{lang_introtext}</label>
+          <div class="uk-form-controls">
+            <div class="uk-button-group">
+                <button class="uk-button uk-button-mini" type="button" title="{lang_expandhelp}" onclick="changeHTMLTextAreaSize('introhtml','larger');" alt="expand button">
+                <i class="uk-icon-plus">
+                </i>
+              </button>
+                <button class="uk-button uk-button-mini" type="button" title="{lang_reducehelp}" onclick="changeHTMLTextAreaSize('introhtml','smaller');" alt="collapse button">
+                <i class="uk-icon-minus">
+                </i>
+              </button>
+            </div>
+            <textarea class="uk-textarea" cols="45" rows="12" name="introhtml" id="introhtml">{story_introtext}</textarea>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <label class="uk-form-label" for="bodyhtml">{lang_bodytext}</label>
+          <div class="uk-form-controls">
+            <div class="uk-button-group">
+                <button class="uk-button uk-button-mini" type="button" title="{lang_expandhelp}" onclick="changeHTMLTextAreaSize('bodyhtml','larger');" alt="expand button">
+                <i class="uk-icon-plus">
+                </i>
+              </button>
+                <button class="uk-button uk-button-mini" type="button" title="{lang_reducehelp}" onclick="changeHTMLTextAreaSize('bodyhtml','smaller');" alt="collapse button">
+                <i class="uk-icon-minus">
+                </i>
+              </button>
+            </div>
+            <textarea class="uk-textarea" cols="45" rows="20" name="bodyhtml" id="bodyhtml">{story_bodytext}</textarea>
+            <div id="editor_mode">{lang_allowed_html}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="se_options" style="display: none;">
+      <fieldset>
+        <div id="se_publish" style="display: none;">
+          <legend>{lang_publishdate}</legend>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="admin-storyeditor_advanced-publish_month">{lang_date}</label>
+            <div class="uk-form-controls">
+                <select class="uk-select uk-form-width-xsmall" name="publish_month" id="admin-storyeditor_advanced-publish_month" aria-describedby="desc-admin-storyeditor-publish_month">
+                {publish_month_options}
+              </select>
+              /
+              <select class="uk-select uk-form-width-xsmall" name="publish_day">{publish_day_options}</select>
+              /
+              <select class="uk-select uk-form-width-xsmall" name="publish_year">{publish_year_options}</select>
+              &nbsp;&nbsp;
+              <select class="uk-select uk-form-width-xsmall" name="publish_hour">{publish_hour_options}</select>
+              :
+              <select class="uk-select uk-form-width-xsmall" name="publish_minute">{publish_minute_options}</select>
+              {publishampm_selection}
+            </div>
+          </div>
+          <div class="uk-form-help-inline uk-text-small">
+            {publish_date_explanation}
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div class="uk-margin">
+      <fieldset>
+      <legend>{lang_publishoptions}</legend>
+        <div class="uk-margin">
+          <label class="uk-form-label" for="publish-options">{lang_mode}</label>
+          <div class="uk-form-controls">
+            {featured_options}
+            <select class="uk-select uk-form-width-small" name="frontpage" id="publish-options">{frontpage_options}</select>
+            <select class="uk-select uk-form-width-small" name="commentcode">{comment_options}</select>
+            <select class="uk-select uk-form-width-small" name="trackbackcode">{trackback_options}</select>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <label class="uk-form-label" for="cmt_close_flag">{lang_cmt_disable}</label>
+          <div class="uk-form-controls">
+            <label class="uk-form-label" for="cmt_close_flag">{lang_enabled}</label>
+            &nbsp;
+            <input type="checkbox" class="uk-checkbox" name="cmt_close_flag" id="cmt_close_flag" value="1" {is_checked5} onclick="enablecmtclose(this);"{xhtml}>
+            &nbsp;
+            <span dir="ltr">
+              <select class="uk-select uk-form-width-xsmall" name="cmt_close_month">{cmt_close_month_options}</select>
+              /
+              <select class="uk-select uk-form-width-xsmall" name="cmt_close_day">{cmt_close_day_options}</select>
+              /
+              <select class="uk-select uk-form-width-xsmall" name="cmt_close_year">{cmt_close_year_options}</select>
+              &nbsp;&nbsp;
+              <select class="uk-select uk-form-width-xsmall" name="cmt_close_hour">{cmt_close_hour_options}</select>
+              :
+              <select class="uk-select uk-form-width-xsmall" name="cmt_close_minute">{cmt_close_minute_options}</select>
+              {cmt_close_ampm_selection}
+              <input type="hidden" name="cmt_close_second" value="{cmt_close_second}"{xhtml}>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div id="se_images" style="display: none;">
+      <fieldset>
+        <legend>{lang_images}</legend>
+      </fieldset>
+    </div>
+    <div id="se_archive" style="display: none;">
+      <fieldset>
+        <legend>{lang_archivetitle}</legend>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="admin-storyeditor_advanced-archiveflag">{lang_archivetitle}</label>
+            </label>
+            <div class="uk-form-controls">
+              <label class="uk-form-label" for="admin-storyeditor_advanced-archiveflag">{lang_enabled}</label>
+              &nbsp;
+              <input type="checkbox" class="uk-checkbox" value="1" {is_checked2} onclick="enablearchive(this);" name="archiveflag" id="admin-storyeditor_advanced-archiveflag"{xhtml}>
+              <input type="checkbox" class="uk-checkbox" name="statuscode" id="storycode10" value="10" {is_checked3}{xhtml}>
+              <label class="uk-form-label" for="storycode10">{lang_optionarchive}</label>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="checkbox" class="uk-checkbox" name="statuscode" id="storycode11" value="11" {is_checked4}{xhtml}>
+              &nbsp;
+              <label class="uk-form-label" for="storycode11">{lang_optiondelete}</label>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="admin-storyeditor_advanced-expire_month">
+            </label>
+            <div class="uk-form-controls">
+              {lang_date}&nbsp;
+              <select class="uk-select uk-form-width-xsmall" name="expire_month" id="admin-storyeditor_advanced-expire_month">{expire_month_options}</select>
+              /
+              <select class="uk-select uk-form-width-xsmall" name="expire_day">{expire_day_options}</select>
+              /
+              <select class="uk-select uk-form-width-xsmall" name="expire_year">{expire_year_options}</select>
+              &nbsp;&nbsp;
+              <select class="uk-select uk-form-width-xsmall" name="expire_hour">{expire_hour_options}</select>
+              :
+              <select class="uk-select uk-form-width-xsmall" name="expire_minute">{expire_minute_options}</select>
+              {expireampm_selection}
+            </div>
+          </div>
+      </fieldset>
+    </div>
+    <div id="se_perms" style="display: none;">
+      <fieldset>
+        <legend>{lang_accessrights}</legend>
+        <div class="uk-margin">
+          {lang_owner}
+          </label>
+          <div class="uk-form-controls">{owner_name}</div>
+        </div>
+        <div class="uk-margin">
+          <label class="uk-form-label" for="group_id">{lang_group}</label>
+          <div class="uk-form-controls">{group_dropdown}</div>
+        </div>
+        <div class="uk-margin">
+          {lang_permissions}
+          <div class="description">{permissions_editor}</div>
+        </div>
+        <div class="description">{lang_perm_key}</div>
+        <div class="description">{lang_permissions_msg}</div>
+      </div>
+      </fieldset>
+    </div>
+    <div id="se_bottom" style="display:{show_submitoptions}">
+      <div class="submit">
+        <button type="submit" name="mode" value="{lang_save}" class="uk-button uk-button-primary">{lang_save}</button>
+        <button type="submit" name="mode" value="{lang_preview}" class="uk-button uk-button-success">{lang_preview}</button>
+        {!if allow_delete}
+          <button type="submit" name="mode" value="{lang_delete}" class="uk-button uk-button-danger" onclick="return confirm('{confirm_message}');">
+          {lang_delete}
+        </button>
+        {!endif}
+        <button type="submit" value="{lang_cancel}" name="mode" class="uk-button">{lang_cancel}</button>
+        <input type="hidden" name="uid" value="{story_uid}"{xhtml}>
+        <input type="hidden" name="publish_second" value="{publish_second}"{xhtml}>
+        <input type="hidden" name="old_sid" value="{old_story_id}"{xhtml}>
+        <input type="hidden" name="hour_mode" value="{hour_mode}"{xhtml}>
+        <input type="hidden" name="expire_second" value="{expire_second}"{xhtml}>
+        <input type="hidden" name="hits" value="{story_hits}"{xhtml}>
+        <input type="hidden" name="comments" value="{story_comments}"{xhtml}>
+        <input type="hidden" name="trackbacks" value="{story_trackbacks}"{xhtml}>
+        <input type="hidden" name="numemails" value="{story_emails}"{xhtml}>
+        <input type="hidden" name="owner_id" value="{owner_id}"{xhtml}>
+        <input type="hidden" name="{gltoken_name}" value="{gltoken}"{xhtml}>
+        {submission_option}
+      </div>
+    </div>
+  </form>
 </div>
 <div id="preview" class="article" style="display: {show_preview};">{preview_content}</div>
 

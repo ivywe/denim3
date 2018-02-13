@@ -4,7 +4,7 @@
   <form action="{site_url}/profiles.php" method="post" id="contactauthorform" class="uk-form-horizontal">
 
     <div class="user_basic">
-      <div class="uk-margin" dl>
+      <div class="uk-margin">
         <label class="uk-form-label">{lang_title}</label>
         <div class="uk-form-controls">{story_link}</div>
     </div>

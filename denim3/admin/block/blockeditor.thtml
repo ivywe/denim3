@@ -66,20 +66,20 @@
     <div class="uk-margin">
       <label class="uk-form-label" for="admin-blockeditor-cachetime">{lang_cachetime}</label>
       <div class="uk-form-controls"><input type="text uk-form-width-xsmall" class="uk-input uk-form-width-small" size="8" value="{cache_time}" name="cache_time" id="admin-blockeditor-cachetime" aria-describedby="desc-admin-blockeditor-cachetime"{xhtml}>
-	      <div>{lang_cachetime_desc}</div>
-			</div>
+        <div>{lang_cachetime_desc}</div>
+      </div>
     </div>
     <div class="uk-margin">
       <label class="uk-form-label" for="admin-blockeditor-css-id">{lang_css_id}</label>
       <div class="uk-form-controls"><input type="text uk-form-width-small" class="uk-input" value="{css_id}" name="css_id" id="admin-blockeditor-css-id" aria-describedby="desc-admin-blockeditor-css-id"{xhtml}>
-      	<div>{lang_css_id_desc}</div>
-			</div>
+        <div>{lang_css_id_desc}</div>
+      </div>
     </div>
     <div class="uk-margin">
       <label class="uk-form-label" for="admin-blockeditor-css-classes">{lang_css_classes}</label>
       <div class="uk-form-controls"><input type="text uk-form-width-small" class="uk-input" value="{css_classes}" name="css_classes" id="admin-blockeditor-css-classes" aria-describedby="desc-admin-blockeditor-css-classes"{xhtml}>
-      	<div>{lang_css_classes_desc}</div>
-			</div>
+        <div>{lang_css_classes_desc}</div>
+      </div>
     </div>
     <fieldset id="fs-phpblock-options">
       <legend>{lang_phpblockoptions}</legend>
@@ -87,8 +87,8 @@
       <div class="uk-margin">
         <label class="uk-form-label" for="admin-blockeditor-phpblockfn">{lang_blockfunction}</label>
         <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" maxlength="50" value="{block_phpblockfn}" name="phpblockfn" id="admin-blockeditor-phpblockfn" aria-describedby="desc-admin-blockeditor-phpblockfn"{xhtml}>
-        	<span class="uk-form-help-inline">{lang_phpblockwarning}</span>
-				</div>
+          <span class="uk-form-help-inline">{lang_phpblockwarning}</span>
+        </div>
     </fieldset>
 
     <fieldset id="fs-portal-options">
@@ -114,8 +114,8 @@
       <div class="uk-margin">
         <label class="uk-form-label" for="admin-blockeditor-content">{lang_blockcontent}</label>
         <div class="uk-form-controls"><textarea class="uk-textarea" cols="40" rows="12" name="content" id="admin-blockeditor-content" aria-describedby="desc-admin-blockeditor-content">{block_content}</textarea>
-        	<div class="uk-form-help-inline">{lang_allowed_html}</div>
-				</div>
+          <div class="uk-form-help-inline">{lang_allowed_html}</div>
+        </div>
       </div>
       <div class="uk-margin">
         <label class="uk-form-label" for="admin-blockeditor-allow_autotags">{lang_autotags}</label>
@@ -135,9 +135,9 @@
 
         {lang_permissions}
         <div class="uk-form-controls">{permissions_editor}
-	        <div class="uk-form-help-inline">{lang_perm_key}</div>
-	        <div class="uk-form-help-inline">{lang_permissions_msg}</div>
-				</div>
+          <div class="uk-form-help-inline">{lang_perm_key}</div>
+          <div class="uk-form-help-inline">{lang_permissions_msg}</div>
+        </div>
       </div>
     </fieldset>
 

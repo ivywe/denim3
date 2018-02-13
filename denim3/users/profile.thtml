@@ -2,29 +2,29 @@
 
 {start_block_userprofile}
   <dl id="profile-userprofile">
-    <label class="uk-form-label">{lang_username}</label>
-    <div class="uk-form-controls">{username}&nbsp;{user_fullname} {edit_link}</div>
-    <div class="uk-form-controls" id="profile-user_photo">{user_photo}</div>
+    <dt>{lang_username}</dt>
+    <dd>{username}&nbsp;{user_fullname} {edit_link}</dd>
+    <dd id="profile-user_photo">{user_photo}</dd>
 
-    <label class="uk-form-label">{lang_membersince}</label>
-    <div class="uk-form-controls">{user_regdate}</div>
+    <dt>{lang_membersince}</dt>
+    <dd>{user_regdate}</dd>
 
     {!if email_option}
-    <label class="uk-form-label">{lang_email}</label>
-    <div class="uk-form-controls"><a href="{site_url}/profiles.php?uid={user_id}" rel="nofollow">{lang_sendemail}</a></div>
+    <dt>{lang_email}</dt>
+    <dd><a href="{site_url}/profiles.php?uid={user_id}" rel="nofollow">{lang_sendemail}</a></dd>
     {!endif}
 
-    <label class="uk-form-label">{lang_homepage}</label>
-    <div class="uk-form-controls">{!if user_homepage}<span class="url"><a href="{user_homepage}">{user_homepage}</a></span>{!endif}</div>
+    <dt>{lang_homepage}</dt>
+    <dd>{!if user_homepage}<span class="url"><a href="{user_homepage}">{user_homepage}</a></span>{!endif}</dd>
 
-    <label class="uk-form-label">{lang_location}</label>
-    <div class="uk-form-controls">{user_location}</div>
+    <dt>{lang_location}</dt>
+    <dd>{user_location}</dd>
 
-    <label class="uk-form-label">{lang_bio}</label>
-    <div class="uk-form-controls">{user_bio}</div>
+    <dt>{lang_bio}</dt>
+    <dd>{user_bio}</dd>
 
-    <label class="uk-form-label">{lang_pgpkey}</label>
-    <div class="uk-form-controls">{user_pgp}</div>
+    <dt>{lang_pgpkey}</dt>
+    <dd>{user_pgp}</dd>
     
     {display_fields}
   </dl>
@@ -34,15 +34,14 @@
 
 {start_block_postingstats}
   <dl id="profile-postingstats">
-    <label class="uk-form-label">{lang_number_stories}</label>
-    <div class="uk-form-controls">{number_stories}</div>
-  </div>
-  <div class="uk-margin">
-    <label class="uk-form-label">{lang_number_comments}</label>
-    <div class="uk-form-controls">{number_comments}</div>
+    <dt>{lang_number_stories}</dt>
+    <dd>{number_stories}</dd>
+
+    <dt>{lang_number_comments}</dt>
+    <dd>{number_comments}</dd>
     
     {field_statistics}
-  </div>
+  </dl>
 
   <div id="profile-all_postings_by">
     <a href="{site_url}/search.php?type=all&amp;author={user_id}&amp;mode=search">{lang_all_postings_by}</a>
@@ -50,17 +49,13 @@
 {end_block}
 
 <!-- BEGIN display_field -->
-  <div class="uk-margin">
-    <label class="uk-form-label">{lang_field}</label>
-    <div class="uk-form-controls">{field}</div>
-  </div>
+    <dt>{lang_field}</dt>
+    <dd>{field}</dd>
 <!-- END display_field -->
 
 <!-- BEGIN field_statistic -->
-  <div class="uk-margin">
-    <label class="uk-form-label">{lang_number_field}</label>
-    <div class="uk-form-controls">{number_field}</div>
-  </div>
+    <dt>{lang_number_field}</dt>
+    <dd>{number_field}</dd>
 <!-- END field_statistic -->
 
 <!-- BEGIN last10_block -->

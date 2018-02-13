@@ -41,9 +41,6 @@
         <span id="desc-admin-blockeditor-blockorder">0 - 9999</span></div>
     </div>
 
-
-
-
     <div class="uk-margin">
       <label class="uk-form-label">{lang_device}</label>
       <div class="uk-form-controls">
@@ -85,7 +82,7 @@
         <div class="uk-form-controls">{permissions_editor}</div>
         <div class=~uk-text-small">{lang_perm_key}</div>
         <div class=~uk-text-small">{permissions_msg}</div>
-			</dl>
+      </div>
     </fieldset>
 
     <div class="submit">

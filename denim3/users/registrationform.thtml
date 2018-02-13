@@ -7,7 +7,7 @@
 
       <p class="form_message">{lang_instructions}</p>
 
-      <div class="uk-margin" dl>
+      <div class="uk-margin">
         <label class="uk-form-label" for="registrationform-username">{lang_username}</label>
         <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" maxlength="16" name="username" value="{username}" id="registrationform-username"{xhtml}></div>
     </div>

@@ -11,7 +11,7 @@
       <label class="uk-form-label" for="admin-groupeditor-grp_descr">{lang_description}</label>
       <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" maxlength="255" value="{group_description}" name="grp_descr" id="admin-groupeditor-grp_descr" required{xhtml}></div>
 
-    </dl>
+    </div>
 
     <div class="uk-margin" {hide_adminoption}>
       {lang_admingroup}
@@ -45,7 +45,7 @@
       <div class="uk-margin">
         <label class="uk-form-label">{lang_securitygroupmsg}</label>
         <div class="uk-form-controls"><div class="fieldset-table-wrapper">{group_options}</div></div>
-      </dl>
+      </div>
     </fieldset>
 
     <fieldset>
@@ -54,7 +54,7 @@
       <div class="uk-margin">
         <label class="uk-form-label">{lang_rightsmsg}</label>
         <div class="uk-form-controls"><div class="fieldset-table-wrapper"><table id="rights_options">{rights_options}</table></div></div>
-      </dl>
+      </div>
     </fieldset>
   </div>
 

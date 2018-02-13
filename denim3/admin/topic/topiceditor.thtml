@@ -63,7 +63,7 @@
       <label>{lang_num_stories}</label>
       <div class="uk-form-controls">{num_stories}</div>
 
-    </dl>
+    </div>
 
     <fieldset>
       <legend>{lang_accessrights}</legend>
@@ -79,7 +79,7 @@
         <div class="uk-form-controls">{permissions_editor}</div>
         <div class="uk-text-small">{lang_perm_key}</div>
         <div class="uk-text-small">{lang_permissions_msg}</div>
-      </dl>
+      </div>
     </fieldset>
 
     <p class="description">{warning_msg}</p>
