@@ -1,6 +1,8 @@
 {# start {templatelocation} #}
 
-    <dt><label for="advanced_editor">{lang_advanced_editor}</label></dt>
-    <dd class="controls_text"><label><input type="checkbox" id="advanced_editor" name="advanced_editor" {advanced_editor_checked}{xhtml}>{adveditor_name}</label></dd>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="advanced_editor">{lang_advanced_editor}</label>
+    <div class="uk-form-controls"><input type="checkbox" class="uk-checkbox" id="advanced_editor" name="advanced_editor" {advanced_editor_checked}{xhtml}>{adveditor_name}</div>
+  </div>
 
 {# end {templatelocation} #}

@@ -6,13 +6,20 @@
 
     <p class="message">{lang_explain}</p>
 
+    <div class="uk-margin">
       <label class="uk-form-label" for="">{lang_username}</label>
       <div class="uk-form-controls">{user_name}</div>
+    </div>
+    <div class="uk-margin">
       <label class="uk-form-label" for=""><label for="newemail-email">{lang_newemail}</label>
       <div class="uk-form-controls"><input type="text" size="32" maxlength="96" name="email" value="{email}" id="newemail-email" class="text"{xhtml}></div>
+    </div>
+    <div class="uk-margin">
 
       <label class="uk-form-label" for=""><label for="newemail-email_conf">{lang_newemail_conf}</label>
       <div class="uk-form-controls"><input type="text" size="32" maxlength="96" name="email_conf" value="{email_conf}" id="newemail-email_conf" class="text"{xhtml}></div>
+    </div>
+  </div>
     
     {captcha}
 

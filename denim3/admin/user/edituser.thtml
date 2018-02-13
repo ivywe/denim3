@@ -1,61 +1,74 @@
 {# start {templatelocation} #}
 
-<form action="{site_admin_url}/user.php" method="post" id="admin-edituser" class="uk-form">
+<form action="{site_admin_url}/user.php" method="post" id="admin-edituser" class="uk-form-horizontal">
 
   <div class="admin_basic compact">
-    <dl class="form_block">
-      <dt>{lang_userid}</dt>
-      <dd class="controls_text">{user_id}</dd>
-
-      <dt>{lang_regdate}</dt>
-      <dd class="controls_text">{user_regdate}</dd>
-
-      <dt>{lang_lastlogin}</dt>
-      <dd class="controls_text">{user_lastlogin}</dd>
-
-      <dt><label for="admin-edituser-username">{lang_username}</label></dt>
-      <dd><div><input type="text" maxlength="16" value="{username}" name="username" id="admin-edituser-username" class="size2"{xhtml}> {remoteservice}</div>
-          {user_photo}<label>{lang_delete_photo}</label>{delete_photo_option}
-      </dd>
-
-      <dt><label for="admin-edituser-fullname">{lang_fullname}</label></dt>
-      <dd><input type="text" maxlength="80" value="{user_fullname}" name="fullname" id="admin-edituser-fullname" class="size5"{xhtml}></dd>
-
+    <div class="uk-margin">
+      {lang_userid}
+      <div class="uk-form-controls">{user_id}</div>
+    </div>
+    <div class="uk-margin">
+      {lang_regdate}
+      <div class="uk-form-controls">{user_regdate}</div>
+    </div>
+    <div class="uk-margin">
+      {lang_lastlogin}
+      <div class="uk-form-controls">{user_lastlogin}</div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-edituser-username">{lang_username}</label>
+      <div class="uk-form-controls"><div><input type="text" class="uk-input uk-form-width-small" class="uk-input uk-form-width-xsmall" maxlength="16" value="{username}" name="username" id="admin-edituser-username"{xhtml}> {remoteservice}</div>
+          {user_photo}<label class="uk-form-label">{lang_delete_photo}</label>{delete_photo_option}
+      </div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-edituser-fullname">{lang_fullname}</label>
+      <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" maxlength="80" value="{user_fullname}" name="fullname" id="admin-edituser-fullname"{xhtml}></div>
+    </div>
+    <div class="uk-margin">
       {password_option}
-
-      <dt><label for="admin-edituser-email">{lang_emailaddress}</label></dt>
-      <dd><input type="text" maxlength="255" value="{user_email}" name="email" id="admin-edituser-email" class="size5"{xhtml}></dd>
-
-      <dt><label for="admin-edituser-homepage">{lang_homepage}</label></dt>
-      <dd><input type="text" maxlength="255" value="{user_homepage}" name="homepage" id="admin-edituser-homepage" class="size5"{xhtml}></dd>
-      
-      <dt><label for="admin-edituser-location">{lang_location}</label></dt>
-      <dd><input type="text" maxlength="96" value="{user_location}" name="location" id="admin-edituser-location" class="size7" aria-describedby="desc-admin-edituser-location"{xhtml}></dd>
-      <dd class="description" id="desc-admin-edituser-location">{lang_location_text}</dd>
-
-      <dt><label for="admin-edituser-sig">{lang_signature}</label></dt>
-      <dd><textarea cols="45" rows="4" name="sig" id="admin-edituser-sig" class="wide" aria-describedby="desc-admin-edituser-sig">{user_signature}</textarea></dd>
-      <dd class="description" id="desc-admin-edituser-sig">{lang_signature_text}</dd>
-
-      <dt><label for="admin-edituser-about">{lang_about}</label></dt>
-      <dd><textarea cols="45" rows="6" name="about" id="admin-edituser-about" class="wide" aria-describedby="desc-admin-edituser-about">{user_about}</textarea></dd>
-      <dd class="description" id="desc-admin-edituser-about">{lang_about_text}</dd>  
-
-      <dt><label for="admin-edituser-pgpkey">{lang_pgpkey}</label></dt>
-      <dd><textarea cols="45" rows="6" name="pgpkey" id="admin-edituser-pgpkey" class="wide" aria-describedby="desc-admin-edituser-pgpkey">{user_pgpkey}</textarea></dd>
-      <dd class="description" id="desc-admin-edituser-pgpkey">{lang_pgpkey_text}</dd>
-
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-edituser-email">{lang_emailaddress}</label>
+      <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" maxlength="255" value="{user_email}" name="email" id="admin-edituser-email"{xhtml}></div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-edituser-homepage">{lang_homepage}</label>
+      <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" maxlength="255" value="{user_homepage}" name="homepage" id="admin-edituser-homepage"{xhtml}></div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-edituser-location">{lang_location}</label>
+      <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" maxlength="96" value="{user_location}" name="location" id="admin-edituser-location" aria-describedby="desc-admin-edituser-location"{xhtml}></div>
+      <div class="description" id="desc-admin-edituser-location">{lang_location_text}</div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-edituser-sig">{lang_signature}</label>
+      <div class="uk-form-controls"><textarea class="uk-textarea" cols="45" rows="4" name="sig" id="admin-edituser-sig" aria-describedby="desc-admin-edituser-sig">{user_signature}</textarea></div>
+      <div class="description" id="desc-admin-edituser-sig">{lang_signature_text}</div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-edituser-about">{lang_about}</label>
+      <div class="uk-form-controls"><textarea class="uk-textarea" cols="45" rows="6" name="about" id="admin-edituser-about" aria-describedby="desc-admin-edituser-about">{user_about}</textarea></div>
+      <div class="description" id="desc-admin-edituser-about">{lang_about_text}</div>  
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-edituser-pgpkey">{lang_pgpkey}</label>
+      <div class="uk-form-controls"><textarea class="uk-textarea" cols="45" rows="6" name="pgpkey" id="admin-edituser-pgpkey" aria-describedby="desc-admin-edituser-pgpkey">{user_pgpkey}</textarea></div>
+      <div class="description" id="desc-admin-edituser-pgpkey">{lang_pgpkey_text}</div>
+    </div>
+    <div class="uk-margin">
       {display_fields}
-
-      <dt>{lang_user_status}</dt>
-      <dd>{user_status}</dd>
+    </div>
+    <div class="uk-margin">
+      {lang_user_status}
+      <div class="uk-form-controls">{user_status}</div>
     </dl>
   </div>
 
   <div class="admin_basic linear">
     <fieldset>
       <legend>{lang_securitygroups}</legend>
-      <dl class="form_block">
+      <div class="uk-margin">
         {group_edit}
       </dl>
 
@@ -76,18 +89,18 @@
 </form>
 
 <!-- BEGIN display_field_text -->
-      <dt><label for="admin-edituser-{fieldname}">{lang_field}</label></dt>
-      <dd><textarea cols="45" rows="6" name="{fieldname}" id="admin-edituser-{fieldname}" class="wide" aria-describedby="desc-admin-edituser-{fieldname}">{field}</textarea></dd>
+      <label class="uk-form-label" for="admin-edituser-{fieldname}">{lang_field}</label>
+      <div class="uk-form-controls"><textarea class="uk-textarea" cols="45" rows="6" name="{fieldname}" id="admin-edituser-{fieldname}" aria-describedby="desc-admin-edituser-{fieldname}">{field}</textarea></div>
       {!if lang_field_text}
-      <dd class="description" id="desc-admin-edituser-{fieldname}">{lang_field_text}</dd>
+      <div class="description" id="desc-admin-edituser-{fieldname}">{lang_field_text}</div>
       {!endif}
 <!-- END display_field_text -->
 
 <!-- BEGIN display_field -->
-      <dt><label for="admin-edituser-{fieldname}">{lang_field}</label></dt>
-      <dd><input type="text" maxlength="{fieldmaxlength}" value="{field}" name="{fieldname}" id="admin-edituser-{fieldname}" class="size5"{xhtml}></dd>
+      <label class="uk-form-label" for="admin-edituser-{fieldname}">{lang_field}</label>
+      <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" class="uk-input" maxlength="{fieldmaxlength}" value="{field}" name="{fieldname}" id="admin-edituser-{fieldname}"{xhtml}></div>
       {!if lang_field_text}
-      <dd class="description" id="desc-admin-edituser-{fieldname}">{lang_field_text}</dd>
+      <div class="description" id="desc-admin-edituser-{fieldname}">{lang_field_text}</div>
       {!endif}
 <!-- END display_field -->
 

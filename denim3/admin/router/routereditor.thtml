@@ -1,36 +1,40 @@
 {# start {templatelocation} #}
 
 {start_router_editor}
-<form action="{site_admin_url}/router.php" method="post" id="admin-routereditor" class="compact uk-form">
-  <div class="admin_basic">
+<form action="{site_admin_url}/router.php" method="post" id="admin-routereditor" class="uk-form-horizontal">
+  <div class="uk-margin">
     <div class="profile_notes uk-panel uk-panel-box">
       {lang_router_notice}
     </div>
 
-    <dl class="form_block">
-      <dt><label>{lang_router_rid}</label></dt>
-      <dd class="controls_text">{rid}</dd>
-
-      <dt><label for="admin-routereditor-method">{lang_router_method}</label></dt>
-      <dd>
-        <select id="admin-routereditor-method" name="method">
+    <div class="uk-margin">
+      <label>{lang_router_rid}</label>
+      <div class="uk-form-controls">{rid}</div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-routereditor-method">{lang_router_method}</label>
+      <div class="uk-form-controls">
+        <select class="uk-select uk-form-width-small" id="admin-routereditor-method" name="method">
           <option value="1"{get_selected}>GET</option>
           <option value="2"{post_selected}>POST</option>
           <option value="3"{put_selected}>PUT</option>
           <option value="4"{delete_selected}>DELETE</option>
           <option value="5"{head_selected}>HEAD</option>
         </select>
-      </dd>
-
-      <dt><label for="admin-routereditor-rule">{lang_router_rule}</label></dt>
-      <dd><input type="text" size="40" value="{rule}" name="rule" id="admin-routereditor-rule" class="size7"{xhtml}></dd>
-
-      <dt><label for="admin-routereditor-route">{lang_router_route}</label></dt>
-      <dd><input type="text" size="40" value="{route}" name="route" id="admin-routereditor-route" class="size7"{xhtml}></dd>
-
-      <dt><label for="admin-routereditor-status_code">{lang_router_status_code}</label></dt>
-      <dd>
-        <select id="admin-routereditor-status_code" name="status_code">
+      </div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-routereditor-rule">{lang_router_rule}</label>
+      <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" size="40" value="{rule}" name="rule" id="admin-routereditor-rule"{xhtml}></div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-routereditor-route">{lang_router_route}</label>
+      <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" size="40" value="{route}" name="route" id="admin-routereditor-route"{xhtml}></div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-routereditor-status_code">{lang_router_status_code}</label>
+      <div class="uk-form-controls">
+        <select class="uk-select uk-form-width-small" id="admin-routereditor-status_code" name="status_code">
           <option value="200"{status200_selected}>200 (OK)</option>
           <option value="300"{status300_selected}>300 (Multiple Choices)</option>
           <option value="301"{status301_selected}>301 (Moved Permanently)</option>
@@ -41,11 +45,12 @@
           <option value="307"{status307_selected}>307 (Temporary Redirect)</option>
           <option value="308"{status308_selected}>308 (Permanent Redirect)</option>
         </select>
-      </dd>
-
-      <dt><label for="admin-routereditor-priority">{lang_router_priority}</label></dt>
-      <dd><input type="text" size="20" value="{priority}" name="priority" id="admin-routereditor-priority" class="size1"{xhtml}></dd>
-    </dl>
+      </div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="admin-routereditor-priority">{lang_router_priority}</label>
+      <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" class="uk-input uk-form-width-xsmall" size="20" value="{priority}" name="priority" id="admin-routereditor-priority"{xhtml}></div>
+    </div>
 
     <div class="submit">
       <button type="submit" name="mode" value="{lang_save}" class="uk-button uk-button-primary">{lang_save}</button>

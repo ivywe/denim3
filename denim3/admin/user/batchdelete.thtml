@@ -2,7 +2,7 @@
 
 {lang_instruction}
 
-<form style="display:inline" action="{site_admin_url}/user.php?mode=batchdelete" method="post" class="uk-form">
+<form style="display:inline" action="{site_admin_url}/user.php?mode=batchdelete" method="post" class="uk-form-horizontal">
   <div style="padding:10px 5px;border:1px solid #E7E7E7;background:#F7F7F7;margin-top:10px;">
     <div class="clearfix">
       {options_list}

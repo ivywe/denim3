@@ -3,12 +3,12 @@
 {start_block_postacomment}
 <div id="commenteditform">
 
-<form action="{form_url}" method="post" id="commentform" class="compact uk-form">
+<form action="{form_url}" method="post" id="commentform" class="uk-form-horizontal">
 
   <div class="user_basic">
-    <dl class="importantstuff clearfix">
-      <dt>{lang_importantstuff}</dt>
-      <dd>
+    <div class="uk-margin">
+      <label class="uk-form-label">{lang_importantstuff}</dt>
+      <div class="uk-form-controls">
         <ul class="ul-importantstuff">
           <li class="li-importantstuff">{lang_instr_line1}</li>
           <li class="li-importantstuff">{lang_instr_line2}</li>
@@ -16,12 +16,12 @@
           <li class="li-importantstuff">{lang_instr_line4}</li>
           <li class="li-importantstuff">{lang_instr_line5}</li>
         </ul>
-      </dd>
-    </dl>
+      </div>
+    </div>
 
-    <dl class="form_block">
-      <dt class="dt-commentform-username">{lang_username}</dt>
-      <dd class="dd-commentform-username">{cid}
+    <div class="uk-margin">
+      <label class="uk-form-label" class="dt-commentform-username">{lang_username}</dt>
+      <div class="uk-form-controls">{cid}
          <input type="hidden" name="order" value="{order}"{xhtml}>
          <input type="hidden" name="format" value="{format}"{xhtml}>
          <input type="hidden" name="cpage" value="{cpage}"{xhtml}>
@@ -31,23 +31,23 @@
          <input type="hidden" name="{gltoken_name}" value="{gltoken}"{xhtml}>
          <input type="hidden" name="{nprefix}uid" value="{uid}"{xhtml}>
          {username}<span{hidewhenediting}>&nbsp;[<a href="{action_url}" rel="nofollow" class="logoutorcreateaccount">{lang_logoutorcreateaccount}</a>]</span>
-      </dd>
+      </div>
 
-      <dt class="title"><label for="commentform-title">{lang_title}</label></dt>
-      <dd class="title"><input type="text" value="{title}" maxlength="96" name="title" id="commentform-title" class="size6"{xhtml}></dd>
+      <label class="uk-form-label" class="title"><label class="uk-form-label"for="commentform-title">{lang_title}</label>
+      <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" value="{title}" maxlength="96" name="title" id="commentform-title"{xhtml}></div>
 
-      <dt><label for="commentform-postmode">{lang_postmode}</label></dt>
-      <dd>
+      <label class="uk-form-label" for="commentform-postmode">{lang_postmode}</label>
+      <div class="uk-form-controls">
         <select name="postmode" id="commentform-postmode">
           {postmode_options}
         </select>
-      </dd>
+      </div>
 
-      <dt><label for="comment_text">{lang_comment}</label></dt>
-      <dd><div class="text_editor"><textarea rows="10" cols="45" name="comment" id="comment_text" class="wide" aria-describedby="desc-comment_text">{comment}</textarea></div></dd>
-      <dd class="description" id="desc-comment_text">{allowed_html}</dd>
+      <label class="uk-form-label" for="comment_text">{lang_comment}</label>
+      <div class="uk-form-controls"><div class="text_editor"><textarea class="uk-textarea" rows="10" cols="45" name="comment" id="comment_text" aria-describedby="desc-comment_text">{comment}</textarea></div></div>
+      <div class="description" id="desc-comment_text">{allowed_html}</div>
       {record_edit}
-    </dl>
+    </div>
 
     {captcha}
 
@@ -73,11 +73,11 @@
 {end_block}
 
 <!-- BEGIN record_edit -->
-<dd class="description" id="record_edit"><input type="checkbox" name="record_edit" {record_edit_checked} value="1">{lang_record_edit}</dd>
+<div class="description" id="record_edit"><input type="checkbox" class="uk-checkbox" name="record_edit" {record_edit_checked} value="1">{lang_record_edit}</div>
 <!-- END record_edit -->
 
 <!-- BEGIN username_anon -->
-<input type="text" name="username" size="16" value="{username_value}" maxlength="32"{xhtml}> ({lang_anonymous})
+<input type="text" class="uk-input uk-form-width-small" name="username" size="16" value="{username_value}" maxlength="32"{xhtml}> ({lang_anonymous})
 <!-- END username_anon -->
 
 {# end {templatelocation} #}

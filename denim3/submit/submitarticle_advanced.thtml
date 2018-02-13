@@ -8,20 +8,32 @@
         <div class="uk-margin" dl>
           <label class="uk-form-label">{lang_username}</label>
           <div class="uk-form-controls">{story_username} [ <a href="{status_url}" rel="nofollow">{lang_loginout}</a>{separator}{create_account} ]</div>
+  </div>
+  <div class="uk-margin">
           <label class="uk-form-label" for="submitstory_advanced-title">{lang_title}</label>
           <div class="uk-form-controls"><input type="text" class="uk-input uk-form-width-small" maxlength="96" value="{story_title}" name="title" id="submitstory_advanced-title"{xhtml}></div>
+  </div>
+  <div class="uk-margin">
           <label class="uk-form-label">{lang_topic}</label>
           <div class="uk-form-controls">{topic_selection}</div>
+  </div>
+  <div class="uk-margin"{hide_meta}>
           <label class="uk-form-label"for="admin-storyeditor-metadescription">{lang_metadescription}</label>
           <div class="uk-form-controls"><textarea class="uk-txtarea" cols="70" rows="2" name="meta_description" id="admin-storyeditor-metadescription">{meta_description}</textarea></div>
+  </div>
+  <div class="uk-margin"{hide_meta}>
           <label class="uk-form-label"for="admin-storyeditor-metakeywords">{lang_metakeywords}</label>
           <div class="uk-form-controls"><textarea class="uk-txtarea" cols="70" rows="2" name="meta_keywords" id="admin-storyeditor-metakeywords">{meta_keywords}</textarea></div>
+  </div>
+  <div class="uk-margin">
           <label class="uk-form-label" for="sel_editmode">{lang_postmode}</label>
           <div class="uk-form-controls">
             <select name="postmode" id="sel_editmode" {change_editormode}>
               {story_postmode_options}
             </select>
           </div>
+  </div>
+  <div class="uk-margin">
           <label class="uk-form-label" for="introtext">{lang_story}</label>
           <div class="uk-form-controls">
             <div id="text_editor" style="display: {show_texteditor};">

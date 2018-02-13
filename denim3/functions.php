@@ -42,7 +42,7 @@ if (strpos(strtolower($_SERVER['PHP_SELF']), 'functions.php') !== false) {
 /**
  * Return the configuration values for the theme
  */
-function theme_config_denim3()
+function theme_config_denim3_ivy()
 {
     $options = array(
         'uikit_theme' => 'default', // you can set this variable to 'default' or 'gradient' or 'almost-flat'
@@ -95,11 +95,11 @@ function theme_config_denim3()
 /**
  * Return an array of CSS files to be loaded
  */
-function theme_css_denim3()
+function theme_css_denim3_ivy()
 {
     global $_CONF, $LANG_DIRECTION;
 
-    $theme_var = theme_config_denim3();
+    $theme_var = theme_config_denim3_ivy();
 
     $direction = ($LANG_DIRECTION === 'rtl') ? '_rtl' : '';
     $ui_theme = '';
@@ -185,7 +185,7 @@ function theme_css_denim3()
 /**
  * Return an array of JS libraries to be loaded
  */
-function theme_js_libs_denim3()
+function theme_js_libs_denim3_ivy()
 {
     return array(
        array(
@@ -202,11 +202,11 @@ function theme_js_libs_denim3()
 /**
  * Return an array of JS files to be loaded
  */
-function theme_js_files_denim3()
+function theme_js_files_denim3_ivy()
 {
     global $_CONF;
 
-    $theme_var = theme_config_denim3();
+    $theme_var = theme_config_denim3_ivy();
 
     $result = array();
     $result[] = array(
@@ -240,7 +240,7 @@ function theme_js_files_denim3()
 /**
  * Do any other initialisation here
  */
-function theme_init_denim3()
+function theme_init_denim3_ivy()
 {
     global $_BLOCK_TEMPLATE, $_CONF;
 

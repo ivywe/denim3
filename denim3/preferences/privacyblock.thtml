@@ -13,17 +13,19 @@
     </div>
   </div>
 
-  <div class="compact">
-    <dl class="form_block">
-      <dt><label for="displayprefs-emailfromuser">{lang_emailfromuser}</label></dt>
-      <dd class="controls_text"><label><input type="checkbox" {emailfromuser_checked} name="emailfromuser" id="displayprefs-emailfromuser"{xhtml}>{lang_emailfromuser_text}</label></dd>
-
-      <dt><label for="displayprefs-emailfromadmin">{lang_emailfromadmin}</label></dt>
-      <dd class="controls_text"><label><input type="checkbox" {emailfromadmin_checked} name="emailfromadmin" id="displayprefs-emailfromadmin"{xhtml}>{lang_emailfromadmin_text}</label></dd>
-
-      <dt><label for="displayprefs-showonline">{lang_showonline}</label></dt>
-      <dd class="controls_text"><label><input type="checkbox" {showonline_checked} name="showonline" id="displayprefs-showonline"{xhtml}>{lang_showonline_text}</label></dd>
-    </dl>
+  <div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="displayprefs-emailfromuser">{lang_emailfromuser}</label>
+      <div class="uk-form-controls"><input type="checkbox" class="uk-checkbox" {emailfromuser_checked} name="emailfromuser" id="displayprefs-emailfromuser"{xhtml}>{lang_emailfromuser_text}</div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="displayprefs-emailfromadmin">{lang_emailfromadmin}</label>
+      <div class="uk-form-controls"><input type="checkbox" class="uk-checkbox" {emailfromadmin_checked} name="emailfromadmin" id="displayprefs-emailfromadmin"{xhtml}>{lang_emailfromadmin_text}</div>
+    </div>
+    <div class="uk-margin">
+      <label class="uk-form-label" for="displayprefs-showonline">{lang_showonline}</label>
+      <div class="uk-form-controls"><input type="checkbox" class="uk-checkbox" {showonline_checked} name="showonline" id="displayprefs-showonline"{xhtml}>{lang_showonline_text}</div>
+    </div>
   </div>
 </fieldset>
 

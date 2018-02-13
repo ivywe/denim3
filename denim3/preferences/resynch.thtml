@@ -1,7 +1,7 @@
 {# start {templatelocation} #}
 
-      <dt><label for="profile-resynch">{lang_resynch}</label></dt>
-      <dd><input type="checkbox" {resynch_checked} name="resynch" id="profile-resynch"{xhtml}></dd>
-      <dd class="description">{lang_resynch_text}</dd>
+      <label class="uk-form-label" for="profile-resynch">{lang_resynch}</label>
+      <div class="uk-form-controls"><input type="checkbox" class="uk-checkbox" {resynch_checked} name="resynch" id="profile-resynch"{xhtml}></dd>
+      <div class=~uk-text-small">{lang_resynch_text}</div>
 
 {# end {templatelocation} #}

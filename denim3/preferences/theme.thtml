@@ -1,6 +1,8 @@
 {# start {templatelocation} #}
 
-<dt><label for="theme">{lang_theme}</label></dt>
-<dd>{theme_selector}</dd>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="theme">{lang_theme}</label>
+    <div class="uk-form-controls">{theme_selector}</div>
+  </div>
 
 {# end {templatelocation} #}

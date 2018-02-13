@@ -13,11 +13,11 @@
     </div>
   </div>
 
-  <div class="compact">
-    <dl class="form_block">
-      <dt><label>{lang_topics}</label></dt>
-      <dd>{email_topic_checklist}</dd>
-    </dl>
+  <div>
+    <div class="uk-margin">
+      <label class="uk-form-label">{lang_topics}</label>
+      <div class="uk-form-controls">{email_topic_checklist}</div>
+    </div>
   </div>
 </fieldset>
 

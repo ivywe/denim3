@@ -1,8 +1,8 @@
 {# start {templatelocation} #}
 
-<dd>
+<div class="uk-form-controls">
   <p class="groupinstructions">{lang_groupinstructions}</p>
   <div class="fieldset-table-wrapper">{group_options}</div>
-</dd>
+</div>
 
 {# end {templatelocation} #}

@@ -4,18 +4,24 @@
 
 {ping_results}
 
-<form action="{php_self}" method="post" id="pingform" class="compact uk-form">
+<form action="{php_self}" method="post" id="pingform" class="uk-form-horizontal">
   <fieldset>
-    <dl class="form_block">
-      <dt>{pingback_button}</dt>
-      <dd>{lang_pingback_short}</dd>
-
-      <dt>{ping_button}</dt>
-      <dd>{lang_ping_short}</dd>
-
-      <dt>{trackback_button}</dt>
-      <dd>{lang_trackback_short}</dd>
-    </dl>
+    <div class="uk-margin">
+      {pingback_button}
+    </div>
+    <div class="uk-margin">
+      <div class="uk-form-controls">{lang_pingback_short}</div>
+    </div>
+    <div class="uk-margin">
+      {ping_button}
+    </div>
+    <div class="uk-margin">
+      <div class="uk-form-controls">{lang_ping_short}</div>
+    </div>
+    <div class="uk-margin">
+      {trackback_button}
+      <div class="uk-form-controls">{lang_trackback_short}</div>
+    </div>
 
     <p class="description">{lang_may_take_a_while}</p>
     {hidden_input_fields}

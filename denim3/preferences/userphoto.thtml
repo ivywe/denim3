@@ -1,7 +1,10 @@
 {# start {templatelocation} #}
 
-<dt><label for="profile-photo">{lang_userphoto}</label></dt>
-<dd><input type="file" name="photo" id="profile-photo" aria-describedby="userphoto-photo"{xhtml}></dd>
-<dd id="userphoto-photo" class="description">{lang_userphoto_text}{display_photo}<br{xhtml}>{photo_max_dimensions}</dd>
+  <div class="uk-margin">
+    <label class="uk-form-label" for="profile-photo">{lang_userphoto}</label>
+    <div class="uk-form-controls">
+      <input type="file" name="photo" id="profile-photo" aria-describedby="userphoto-photo"{xhtml}></div>
+    <div class="uk-form-controls" id="userphoto-photo" class="description">{lang_userphoto_text}{display_photo}<br{xhtml}>{photo_max_dimensions}</div>
+  </div>
 
 {# end {templatelocation} #}

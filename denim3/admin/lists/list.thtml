@@ -2,7 +2,7 @@
 
 {search_menu}
 
-<form action="{form_url}" method="post" class="uk-form">
+<form action="{form_url}" method="post" class="uk-form-horizontal">
 
 <div>
 {formfields_top}

@@ -36,6 +36,8 @@
   <dl id="profile-postingstats">
     <label class="uk-form-label">{lang_number_stories}</label>
     <div class="uk-form-controls">{number_stories}</div>
+  </div>
+  <div class="uk-margin">
     <label class="uk-form-label">{lang_number_comments}</label>
     <div class="uk-form-controls">{number_comments}</div>
     
@@ -48,12 +50,14 @@
 {end_block}
 
 <!-- BEGIN display_field -->
+  <div class="uk-margin">
     <label class="uk-form-label">{lang_field}</label>
     <div class="uk-form-controls">{field}</div>
   </div>
 <!-- END display_field -->
 
 <!-- BEGIN field_statistic -->
+  <div class="uk-margin">
     <label class="uk-form-label">{lang_number_field}</label>
     <div class="uk-form-controls">{number_field}</div>
   </div>
